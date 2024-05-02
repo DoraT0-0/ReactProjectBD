@@ -1,0 +1,230 @@
+.App {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* CARD  */
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 225px);
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 30px;
+  row-gap: 40px;
+  margin: 25px auto;
+}
+
+.ProductCard{
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
+.ProductCard:hover {
+  box-shadow: 4px 8px 16px rgba(82, 51, 255, 0.2);
+}
+
+.CardTop{
+  flex: 0 0 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.CardImg{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.CardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.2s;
+}
+
+.CardImg:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.CardImg :hover > img {
+  transform: scale(1.1);
+}
+
+.CardBottom{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Занимаем всю оставшуюся высоту карточки */
+  padding: 10px;
+}
+
+.CardPrice{
+  display: flex;
+  margin-bottom: 10px;
+  flex: 0 0 50%;
+}
+
+.CardPrice::after {
+  content: "₽";
+  margin-left: 4px;
+  position: relative;
+}
+
+.CardTitle {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  color: #3e4344;
+}
+
+.CardAdd {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  color: #4311a8;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #4416c3;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: auto;
+}
+
+.CardAdd:hover {
+  border: 1px solid #0d6efd;
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* FORM CREATED */
+.CreateProduct {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.FormContainer #inputCreateProduct {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.FormContainer button {
+  margin-top: 15px;
+  height: 60px;
+  border: none;
+  background-color: #3988fe;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+.FormContainer button:hover {
+  cursor: pointer;
+  background-color: #0d6efd;
+}
+
+ErrorMessage span {
+  color: red;
+}
+
+/* CARD DETALIS */
+.content {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 50px;
+}
+
+.left {
+  float:left;
+  width: 50%;
+  border: 1px solid black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.right{
+  float:left;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.right > div{
+  margin-bottom: 25px;
+}
+
+.card_detalis_name{
+  font-size: 30px;
+}
+.card_detalis_price{
+  font-size: 20px;
+}
+.card_detalis_description{
+  font-size: 20px;
+}
+.card_detalis_tocart{
+  margin-top: 15px;
+  height: 60px;
+  border: none;
+  background-color: #3988fe;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+}
+.card_detalis_tocart:hover{
+  cursor: pointer;
+  background-color: #0d6efd;
+}
+
+.card_detalis_description > div {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.Home{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px
+}

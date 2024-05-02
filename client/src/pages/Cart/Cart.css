@@ -1,0 +1,79 @@
+.Appp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+.count-sum {
+    margin-left: 50px;
+}
+
+.cart-card-left {
+    display: flex;
+    align-items: center;
+}
+
+.cart-card-left img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.cart-card-right button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.butt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 80%;
+}
+
+.summall {
+    font-weight: bold;
+}
+
+.AscOrder {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cart-card-right button:hover {
+    background-color: #0056b3;
+}
+
+.AscOrder:hover {
+    background-color: #218838;
+}
